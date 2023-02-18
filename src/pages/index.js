@@ -1,4 +1,7 @@
 import React from "react"
+import styled from "@emotion/styled"
+import dimensions from "styles/dimensions"
+
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
@@ -10,6 +13,13 @@ import Header from "components/Header"
 import ListGrid from "components/ListGrid"
 import "styles/projectShowcase.scss"
 import HorizontalCalc from "components/HorizontalCalc"
+
+const MainContainer = styled("div")`
+  display: block; // TODO: This might need changed. 
+  height: calc(100vh - ${dimensions.paddingVerticalDesktop});
+  width: 100vw;
+  top: 0;
+  `
 
 const RenderBody = ({
   projects,
@@ -58,11 +68,12 @@ const RenderBody = ({
         },
       ].concat(meta)}
     />
-    
-    <Header />
-    <HorizontalCalc years={years} anim={0}>
-      <ProjectGrid projects={filteredProjects} />
-    </HorizontalCalc>
+    <MainContainer>
+      <Header />
+      <HorizontalCalc years={years} anim={0}>
+        <ProjectGrid projects={filteredProjects} />
+      </HorizontalCalc>
+    </MainContainer>
   </>
 )
 

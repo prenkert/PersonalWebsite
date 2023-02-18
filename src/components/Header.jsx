@@ -6,11 +6,12 @@ import dimensions from "styles/dimensions"
 import "@fontsource/lobster"
 
 const HeaderContainer = styled("div")`
-  position: relative;
-  left: ${dimensions.homeAlignLeft};
+  width: 100%;
+  height: fit-content;
   display: inline-grid;
   grid-template-columns: repeat(2, auto);
   margin-bottom: ${dimensions.paddingVerticalDesktop};
+  padding-left: ${dimensions.homeAlignLeft};
   }
 `
 

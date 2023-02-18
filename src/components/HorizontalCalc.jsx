@@ -6,7 +6,7 @@ import { BrowserView, MobileView } from "react-device-detect"
 
 const HorizontalContainer = styled("div")`
   width: 100vw;
-  height: 85vh; \\Hacky - fix this
+  height: calc(100vh - ${dimensions.paddingVerticalDesktop});
   padding-top: 1vw;
   overflow: hidden;
   display: -webkit-box;
