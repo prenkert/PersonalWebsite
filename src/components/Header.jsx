@@ -9,7 +9,7 @@ const HeaderContainer = styled("div")`
   width: 100%;
   height: fit-content;
   display: inline-grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: min-content auto;
   margin-bottom: ${dimensions.paddingVerticalDesktop};
   padding-left: ${dimensions.homeAlignLeft};
   }
@@ -57,7 +57,7 @@ export default class Header extends React.Component {
         <LogoStyle>
             Phil Renkert
         </LogoStyle>
-        <h2 style={{   justifySelf: "center",  alignSelf: "end", fontSize: "1.5em", padding: 0, margin: 0 }}>
+        <h2 style={{   justifySelf: "left",  alignSelf: "end", fontSize: "1.5em", padding: 0, margin: 0 }}>
           <HeaderLinks>
             <Link activeClassName="Link--is-active" to="/">
               Projects

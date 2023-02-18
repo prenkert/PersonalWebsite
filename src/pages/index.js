@@ -15,8 +15,9 @@ import "styles/projectShowcase.scss"
 import HorizontalCalc from "components/HorizontalCalc"
 
 const MainContainer = styled("div")`
-  display: block; // TODO: This might need changed. 
-  height: calc(100vh - ${dimensions.paddingVerticalDesktop});
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 2*${dimensions.paddingVerticalDesktop});
   width: 100vw;
   top: 0;
   `
@@ -36,7 +37,7 @@ const RenderBody = ({
         {
           name: `description`,
           content:
-            "Garrett Vercoe is a designer working with new technology interfaces and development.",
+            "Philip Renkert personal website.",
         },
         {
           property: `og:title`,

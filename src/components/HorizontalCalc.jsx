@@ -6,14 +6,9 @@ import { BrowserView, MobileView } from "react-device-detect"
 
 const HorizontalContainer = styled("div")`
   width: 100vw;
-  height: calc(100vh - ${dimensions.paddingVerticalDesktop});
-  padding-top: 1vw;
+  flex-grow: 1;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 `
 
