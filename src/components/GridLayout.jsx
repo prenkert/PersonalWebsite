@@ -4,8 +4,11 @@ import dimensions from "styles/dimensions"
 
 const GridLayout = styled("div")`
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 20vw));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 30vw));
+  grid-auto-flow: column;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   padding-left: ${dimensions.homeAlignLeft};
+  overflow: hidden;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 `

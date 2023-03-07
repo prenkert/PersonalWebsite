@@ -25,14 +25,7 @@ export default class HorizontalCalc extends React.Component {
             config={{ stiffness: 375, dampness: 1 }}
             animValues ={this.props.anim}
           >
-            <WidthDetector
-              length={this.props.years.length}
-              style={{
-                width: `${100 + 26.5 * this.props.years.length}vw`,
-              }}
-            >
-              {this.props.children}
-            </WidthDetector>
+            {this.props.children}
           </HorizontalScroll>
         </HorizontalContainer>
       </>
