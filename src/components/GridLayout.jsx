@@ -4,13 +4,11 @@ import dimensions from "styles/dimensions"
 
 const GridLayout = styled("div")`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 30vw));
+  grid-template-columns: repeat(auto-fit, 28.3vw);
   grid-auto-flow: column;
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-  padding-left: ${dimensions.homeAlignLeft};
-  overflow: hidden;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  grid-template-rows: repeat(2, 47.5vw);
+  column-gap: 5vw;
+  row-gap: 5vw;
 `
 
 export default class Grid extends React.Component {
