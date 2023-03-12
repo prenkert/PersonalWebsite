@@ -12,7 +12,8 @@ const ProjectCardContainer = styled("div")`
   min-width: 100px;
   box-sizing: border-box;
   min-width: min-content;
-  dipslay: inline-block
+  dipslay: inline-block;
+  scroll-snap-align: start;
 `
 
 const LinkTo = styled(Link)`

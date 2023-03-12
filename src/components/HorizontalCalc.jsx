@@ -12,21 +12,12 @@ const HorizontalContainer = styled("div")`
   align-items: center;
 `
 
-const WidthDetector = styled("div")` 
-`
-
 export default class HorizontalCalc extends React.Component {
   render() {
     return (
       <>
         <HorizontalContainer>
-          <HorizontalScroll
-            reverseScroll={true}
-            config={{ stiffness: 375, dampness: 1 }}
-            animValues ={this.props.anim}
-          >
             {this.props.children}
-          </HorizontalScroll>
         </HorizontalContainer>
       </>
     )

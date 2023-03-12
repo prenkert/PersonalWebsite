@@ -71,9 +71,7 @@ const RenderBody = ({
     />
     <MainContainer>
       <Header />
-      <HorizontalCalc years={years} anim={0}>
-        <ProjectGrid projects={filteredProjects} />
-      </HorizontalCalc>
+      <ProjectGrid projects={filteredProjects} />
     </MainContainer>
   </>
 )
