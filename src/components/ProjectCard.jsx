@@ -8,15 +8,19 @@ import CircleDate from "./CircleDate"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ProjectCardContainer = styled("div")`
-  transition: all 150ms ease-in-out;
-  min-width: 100px;
-  box-sizing: border-box;
-  min-width: min-content;
-  dipslay: inline-block;
   scroll-snap-align: start;
 `
 
+const ImageWrapper = styled("div")`
+  display: flex;
+  flex-grow: 1;
+`
+
 const LinkTo = styled(Link)`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-decoration: none;
   color: currentColor;
   &:hover .projectCardTitle {
@@ -55,32 +59,29 @@ class ProjectCard extends React.Component {
           onMouseEnter={() => this.onHover()}
           onMouseLeave={() => this.onOut()}
         >
-          <Cursor show={this.state.active}>
-            <LinkTo to={`${this.props.path}`}>
-              <ProjectCardTitle className="projectCardTitle">
-                {this.props.title}
-              </ProjectCardTitle>
+          <LinkTo to={`${this.props.path}`}>
+            <ProjectCardTitle className="projectCardTitle">
+              {this.props.title}
+            </ProjectCardTitle>
+            <ImageWrapper>
               <GatsbyImage
                 image={getImage(this.props.thumbnail)}
                 style = {{
                   "background-color": "#fff",
                   "justify-content": "center",
                   "align-items": "center",
-                  "overflow": "hidden",
-                  "position": "relative",
-                  "height": "22.75vh",
-                  "max-width": "100%"
+                  "object-fit": "cover",
                 }}
                 imgStyle = {{
                   "height": "100%",
                   "width": "100%",
                 }}
               />
-            </LinkTo>
+            </ImageWrapper>
             <ProjectCardCategory onClick={this.categoryFilter}>
               <CircleDate category={this.props.category} date={this.props.date.substring(0,4)} filter={"none"}/>
             </ProjectCardCategory>{" "}
-          </Cursor>
+          </LinkTo>
         </ProjectCardContainer>
       </React.Fragment>
     )

@@ -18,8 +18,9 @@ const GridLayout = styled("div")`
   grid-row-gap: 40px;
   grid-template-rows: repeat(2, auto);
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory; */
   padding-left: ${dimensions.homeAlignLeft};
+  padding-right: ${dimensions.homeAlignLeft};s
 `
 
 export default class ProjectGrid extends React.Component {
