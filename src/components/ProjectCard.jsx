@@ -9,11 +9,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ProjectCardContainer = styled("div")`
   scroll-snap-align: start;
-`
-
-const ImageWrapper = styled("div")`
-  display: flex;
-  flex-grow: 1;
+  overflow: hidden
 `
 
 const LinkTo = styled(Link)`
@@ -26,6 +22,12 @@ const LinkTo = styled(Link)`
   &:hover .projectCardTitle {
     text-decoration: underline;
   }
+`
+
+const ImageWrapper = styled("div")`
+  display: flex;
+  overflow: hidden;
+  flex: 1 1 auto;
 `
 
 const ProjectCardCategory = styled("h3")`
@@ -66,15 +68,10 @@ class ProjectCard extends React.Component {
             <ImageWrapper>
               <GatsbyImage
                 image={getImage(this.props.thumbnail)}
+                objectPosition="50% 50%"
                 style = {{
-                  "background-color": "#fff",
-                  "justify-content": "center",
-                  "align-items": "center",
-                  "object-fit": "cover",
                 }}
                 imgStyle = {{
-                  "height": "100%",
-                  "width": "100%",
                 }}
               />
             </ImageWrapper>
