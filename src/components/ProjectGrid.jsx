@@ -12,15 +12,30 @@ const HorizontalContainer = styled("div")`
 
 const GridLayout = styled("div")`
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc(calc(100%/3) - 30px);
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  grid-template-rows: repeat(2, 1fr);
-  overflow-x: scroll;
+  grid-column-gap: ${dimensions.homeAlignLeft};
+  grid-row-gap: ${dimensions.homeAlignLeft};
   /* scroll-snap-type: x mandatory; */
   padding-left: ${dimensions.homeAlignLeft};
-  padding-right: ${dimensions.homeAlignLeft};s
+  padding-right: ${dimensions.homeAlignLeft};
+  
+  @media (max-aspect-ratio: 1/1) {
+    grid-auto-flow: row;
+    grid-template-columns: 100%;
+    grid-auto-rows: calc(100%/3);
+    overflow-y: scroll;
+  }
+
+  @media (min-aspect-ratio: 1/1) {
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    grid-auto-columns: calc(calc(100%/2) - 30px);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (min-aspect-ratio: 3/2) {
+    grid-auto-columns: calc(calc(100%/3) - 30px);
+    grid-template-rows: repeat(2, 1fr);
+  }
 `
 
 export default class ProjectGrid extends React.Component {
