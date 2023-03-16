@@ -18,22 +18,34 @@ const GridLayout = styled("div")`
   padding-left: ${dimensions.homeAlignLeft};
   padding-right: ${dimensions.homeAlignLeft};
   
-  @media (max-aspect-ratio: 1/1) {
+  @media (max-aspect-ratio: 10/16) {
     grid-auto-flow: row;
     grid-template-columns: 100%;
-    grid-auto-rows: calc(100%/3);
+    grid-auto-rows: calc(calc(100%/3) - calc(${dimensions.homeAlignLeft}*2/3));
     overflow-y: scroll;
   }
 
-  @media (min-aspect-ratio: 1/1) {
+  @media (min-aspect-ratio: 10/16) {
+    grid-auto-flow: row;
+    grid-template-columns: 100%;
+    grid-auto-rows: calc(calc(100%/2) - calc(${dimensions.homeAlignLeft}/2));
+    overflow-y: scroll;
+  }
+
+  @media (min-aspect-ratio: 3/4) {
     grid-auto-flow: column;
     overflow-x: scroll;
-    grid-auto-columns: calc(calc(100%/2) - 30px);
+    grid-auto-columns: calc(calc(100%/2) - calc(${dimensions.homeAlignLeft}/2));
     grid-template-rows: repeat(2, 1fr);
   }
 
-  @media (min-aspect-ratio: 3/2) {
-    grid-auto-columns: calc(calc(100%/3) - 30px);
+  @media (min-aspect-ratio: 4/3) {
+    grid-auto-columns: calc(calc(100%/3) - calc(${dimensions.homeAlignLeft}*2/3));
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (min-aspect-ratio: 16/10) {
+    grid-auto-columns: calc(calc(100%/4) - calc(${dimensions.homeAlignLeft}*3/4));
     grid-template-rows: repeat(2, 1fr);
   }
 `
