@@ -15,6 +15,8 @@ const GridLayout = styled("div")`
   grid-column-gap: ${dimensions.homeAlignLeft};
   grid-row-gap: ${dimensions.homeAlignLeft};
   /* scroll-snap-type: x mandatory; */
+  padding-top: ${dimensions.homeVerticalMargin};
+  padding-bottom: ${dimensions.homeVerticalMargin};
   padding-left: ${dimensions.homeAlignLeft};
   padding-right: ${dimensions.homeAlignLeft};
   
@@ -25,7 +27,7 @@ const GridLayout = styled("div")`
     overflow-y: scroll;
   }
 
-  @media (min-aspect-ratio: 10/16) {
+  @media (max-aspect-ratio: 3/4) {
     grid-auto-flow: row;
     grid-template-columns: 100%;
     grid-auto-rows: calc(calc(100%/2) - calc(${dimensions.homeAlignLeft}/2));

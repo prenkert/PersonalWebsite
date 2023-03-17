@@ -12,7 +12,6 @@ import Header from "components/Header"
 
 import ListGrid from "components/ListGrid"
 import "styles/projectShowcase.scss"
-import HorizontalCalc from "components/HorizontalCalc"
 
 const MainContainer = styled("div")`
   display: flex;

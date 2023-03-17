@@ -8,9 +8,9 @@ import "@fontsource/lobster"
 const HeaderContainer = styled("div")`
   width: 100%;
   height: fit-content;
-  display: inline-grid;
-  grid-template-columns: min-content auto;
-  margin-bottom: ${dimensions.paddingVerticalDesktop};
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   padding-left: ${dimensions.homeAlignLeft};
   }
 `
@@ -19,16 +19,15 @@ const LogoStyle = styled("h1")`
   font-family:"Lobster";
   font-size: 3em;
   align-self: start;
-  white-space: nowrap
+  white-space: nowrap;
+  margin-right: ${dimensions.headerMargin};
 `
 
 const HeaderLinks = styled("div")`
-  padding-left: 1em;
-  padding-right: 1em;
   display: inline-grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 1em;
-
+  margin-right: ${dimensions.headerMargin};
+  grid-gap: ${dimensions.headerMargin};
   a {
     color: ${colors.grey600};
     text-decoration: none;

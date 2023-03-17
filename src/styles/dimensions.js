@@ -12,8 +12,11 @@ const dimensions = {
   paddingVerticalDesktop: "2rem",
 
   homeAlignLeft:"3.75vw",
+  homeVerticalMargin: "2vw",
   projectAlignLeft:"10.75vw",
-  closeAlignCenter:"5.375vw"
+  closeAlignCenter:"5.375vw",
+
+  headerMargin: "12px"
 }
 
 export default dimensions
