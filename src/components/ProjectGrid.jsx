@@ -52,23 +52,46 @@ const GridLayout = styled("div")`
   }
 `
 
+const handleOnWheel = (e) => {
+  const strength = Math.abs(e.deltaY);
+  if (e.deltaY === 0) return;
+
+  const el = e.currentTarget;
+  if (
+    !(el.scrollLeft === 0 && e.deltaY < 0) &&
+    !(
+      el.scrollWidth -
+        el.clientWidth -
+        Math.round(el.scrollLeft) ===
+        0 && e.deltaY > 0
+    )
+  ) {
+    e.preventDefault();
+  }
+  el.scrollTo({
+    left: el.scrollLeft + e.deltaY,
+    // large scrolls with smooth animation behavior will lag, so switch to auto
+    behavior: strength > 70 ? "auto" : "smooth",
+  });
+}
+
 export default class ProjectGrid extends React.Component {
   render() {
     return (
       <HorizontalContainer>
-        <GridLayout>
-          {this.props.projects.map((project, i) => (
-            <ProjectCard
-              key={i}
-              category={project.node.frontmatter.project_category}
-              title={project.node.frontmatter.project_title}
-              thumbnail={project.node.frontmatter.project_preview_thumbnail}
-              date={project.node.frontmatter.project_post_date}
-              categoryOnClick={this.handleFilterSelect}
-              path={project.node.frontmatter.path}
-            />
-          ))}
-        </GridLayout>
+          <GridLayout onWheel={handleOnWheel}>
+            {this.props.projects.map((project, i) => (
+              <ProjectCard
+                key={i}
+                category={project.node.frontmatter.project_category}
+                title={project.node.frontmatter.project_title}
+                thumbnail={project.node.frontmatter.project_preview_thumbnail}
+                date={project.node.frontmatter.project_post_date}
+                categoryOnClick={this.handleFilterSelect}
+                path={project.node.frontmatter.path}
+              />
+            ))}
+          </GridLayout>
       </HorizontalContainer>
     )
   }
