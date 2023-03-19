@@ -6,6 +6,27 @@ import "@fontsource/roboto"
 import "@fontsource/source-sans-pro"
 
 const globalStyles = css`
+
+  scrollbar-width: auto;
+  scrollbar-color: ${colors.grey500} #ffffff;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; 
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${colors.grey500};
+    border-radius: 10px;
+    border: 0px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${colors.grey700};
+  }
+
   @font-face {
     font-family: "Monument";
     src: url(${fontFiles.Monument}) format("opentype");

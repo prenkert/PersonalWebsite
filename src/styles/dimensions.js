@@ -11,8 +11,8 @@ const dimensions = {
   paddingHorizontalMobile: "2rem",
   paddingVerticalDesktop: "2rem",
 
-  homeAlignLeft:"3.75vw",
-  homeVerticalMargin: "2vw",
+  homeAlignLeft:"30px",
+  homeVerticalMargin: "10px",
   projectAlignLeft:"10.75vw",
   closeAlignCenter:"5.375vw",
 

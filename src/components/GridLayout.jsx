@@ -1,5 +1,4 @@
 import React from "react"
-import ReactDOM from 'react-dom';
 import styled from "@emotion/styled"
 import dimensions from "styles/dimensions"
 
@@ -10,19 +9,19 @@ const StyledGrid = styled("div")`
   /* scroll-snap-type: x mandatory; */
   padding-top: ${dimensions.homeVerticalMargin};
   padding-bottom: ${dimensions.homeVerticalMargin};
-  padding-left: ${dimensions.homeAlignLeft};
-  padding-right: ${dimensions.homeAlignLeft};
+  margin-left: ${dimensions.homeAlignLeft};
+  margin-right: ${dimensions.homeAlignLeft};
   
   @media (max-aspect-ratio: 10/16) {
     grid-auto-flow: row;
-    grid-template-columns: 100%;
+    grid-template-columns: 95%;
     grid-auto-rows: calc(calc(100%/3) - calc(${dimensions.homeAlignLeft}*2/3));
     overflow-y: scroll;
   }
 
   @media (max-aspect-ratio: 3/4) {
     grid-auto-flow: row;
-    grid-template-columns: 100%;
+    grid-template-columns: 95%;
     grid-auto-rows: calc(calc(100%/2) - calc(${dimensions.homeAlignLeft}/2));
     overflow-y: scroll;
   }
