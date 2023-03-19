@@ -7,7 +7,8 @@ import "@fontsource/source-sans-pro"
 
 const globalStyles = css`
 
-  scrollbar-width: auto;
+  scrollbar-width: 8px;
+  scrollbar-height: 8px;
   scrollbar-color: ${colors.grey500} #ffffff;
 
   ::-webkit-scrollbar {
