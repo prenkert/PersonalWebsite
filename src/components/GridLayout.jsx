@@ -5,7 +5,7 @@ import dimensions from "styles/dimensions"
 const StyledGrid = styled("div")`
   display: grid;
   grid-column-gap: ${dimensions.homeAlignLeft};
-  grid-row-gap: ${dimensions.homeAlignLeft};
+  grid-row-gap: ${dimensions.homeVerticalMargin};
   /* scroll-snap-type: x mandatory; */
   padding-top: ${dimensions.homeVerticalMargin};
   padding-bottom: ${dimensions.homeVerticalMargin};

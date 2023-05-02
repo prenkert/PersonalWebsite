@@ -6,13 +6,9 @@ const dimensions = {
   maxwidthMobile: "600px",
 
   //ems
-  paddingHorizontalDesktop: "2rem",
-  paddingHorizontalTablet: "2rem",
-  paddingHorizontalMobile: "2rem",
-  paddingVerticalDesktop: "2rem",
-
-  homeAlignLeft:"30px",
-  homeVerticalMargin: "10px",
+  paddingVerticalDesktop: "3vh",
+  homeAlignLeft:"4vw",
+  homeVerticalMargin: "3vh",
   projectAlignLeft:"10.75vw",
   closeAlignCenter:"5.375vw",
 
