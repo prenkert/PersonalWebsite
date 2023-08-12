@@ -10,6 +10,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-theme-photography-portfolio`,
+      options: {
+        basePath: `/portfolio`,
+        imagesPath: `${__dirname}/content/portfolio_images`
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`, // Required for Netlify CMS + Remark
       options: {
         name: `projects`,
