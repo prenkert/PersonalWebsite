@@ -25,7 +25,7 @@ const LogoStyle = styled("h1")`
 
 const HeaderLinks = styled("div")`
   display: inline-grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   margin-right: ${dimensions.headerMargin};
   grid-gap: ${dimensions.headerMargin};
   a {
@@ -63,6 +63,9 @@ export default class Header extends React.Component {
             </Link>
             <Link activeClassName="Link--is-active" to="/information">
               Information
+            </Link>
+            <Link activeClassName="Link--is-active" to="https://portfolio.philrenkert.com/">
+              Photography
             </Link>
             <a target="_blank" href="mailto:prenkert@live.com">
               Contact

@@ -9,6 +9,7 @@ project_preview_thumbnail: ./cover_page.jpg
 tools: ["Nikon D850", "Indesign CC", "Lightroom Classic"]
 project_links: [
     {"url": "https://drive.google.com/file/d/1pCy4vh-YZATkqV04lhihQQaZHeed7v1l/view?usp=sharing", "label": "Book PDF"},
+    {"url": "https://portfolio.philrenkert.com/iceland-farm-to-tourist", "label": "Photo Album"},
 ]
 description: "A photographic tour of Icelandic agriculture’s
 past, present and future."
