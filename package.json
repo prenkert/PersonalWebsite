@@ -3,7 +3,7 @@
   "private": true,
   "description": "A repository of all my projects.",
   "version": "0.1.0",
-  "author": "Philip Renkert | prenkert@live.com",
+  "author": "Philip Renkert | 16rephil@gmail.com",
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",

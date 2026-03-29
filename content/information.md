@@ -5,14 +5,14 @@ links: [
     {"url": "https://www.linkedin.com/in/philiprenkert/", "label": "LinkedIn"},
     {"url": "https://github.com/prenkert", "label": "GitHub"}
 ]
-services: [Mechanical Engineering, Dynamic System Simulation, Dynamic System Optimization]
-hobbies: [Photography, Music, CrossFit, Anything outside]
+services: [Mechanical Engineering, Dynamic System Design, Design Optimization]
+hobbies: [Photography, Music, Making, CrossFit, Anything outside]
 ---
 Hey! I'm Phil.  
 
-I started out as a farmer, went to school for mechanical engineering at the University of Virginia, and went to school again for mechanical engineering at the University of Illinois.  There, I built optimization tools to help engineers design dynamic systems.  Now out in the working world, I'm designing simulation and data management tools that support the development and validation of autonomous systems.
+I started out as a farmer and rancher in Wyoming, went to school for mechanical engineering at the University of Virginia, and went to school again for mechanical engineering at the University of Illinois.  There, I built optimization tools to help engineers design dynamic systems.  Now out in the working world, I'm designing simulation and data management tools that support the development and validation of autonomous systems.
 
-Though I'm trained in equations, calculators, and the art of taking tests, I approach my work more like an artist or designer would.  Prescriptive solutions are my Kryptonite; I am fueled by curiosity, creativity, and a dash of perfectionism.  
+Though I'm trained in equations, calculators, and the art of taking tests, I approach my work more like an artist or designer would.  Prescriptive solutions are my Kryptonite; I am fueled by curiosity, creativity, and the joy of doing things well.  
 
 I draw inspiration from the first and foremost Creator, whose work sets an beautifully high bar.  He also provides a manual for work and life that tells me all I need to know about who I am and what I am to do.  A few of my favorite instructions for work are:
 

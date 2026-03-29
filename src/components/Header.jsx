@@ -67,7 +67,7 @@ export default class Header extends React.Component {
             <Link activeClassName="Link--is-active" to="https://portfolio.philrenkert.com/">
               Photography
             </Link>
-            <a target="_blank" href="mailto:prenkert@live.com">
+            <a target="_blank" href="mailto:16rephil@gmail.com.com">
               Contact
             </a>
           </HeaderLinks>
