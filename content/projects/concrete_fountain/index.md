@@ -30,4 +30,8 @@ description: "A small concrete fountain"
 
 Whenever I'm tempted to trust in my inner *Homo economicus*, I can look back on this project as a sober reminder of just how readily reason defects to the service of *Homo ludens* and *Homo faber*. Why would we spend $20 to buy a fountain for the family cat *when I could make one instead*? Several months and more than $20 later, reason's duplicity was painfully apparent. 
 
-To be fair, I had just taken Jeff Girard's "Creative Concrete Mastery" class and was itching for an excuse to put what I had learned into practice.  
+To be fair, I had just taken Jeff Girard's "Creative Concrete Mastery" class and was itching for an excuse to put what I had learned into practice.  I had also just been introduced to Caleb Lawson's work and, inspired by his use of mixed materials, wanted to try a design with exposed metal. The design's shape was determined largely by the casting forms that could be constructed with my limited tools (and skills). Angles were out, requiring miter cuts with an accuracy beyond the reach of my makeshift track saw. The result was a simple, rectlinear, semi-brutalist design - a fitting monument to the little feline tyrant for whom it was created. 
+
+[CAD Rendering; Sketch with Golden Ratio?]
+
+The form comprises a melamine shell and a handful of 3D-printed components that create the cavities. I used a flexible TPU filament to print a part that creates the visible pocket on top and aligns the copper pipe. 
